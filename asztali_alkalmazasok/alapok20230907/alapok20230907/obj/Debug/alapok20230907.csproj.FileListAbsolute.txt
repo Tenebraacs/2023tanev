@@ -1,0 +1,8 @@
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\alapok20230907\alapok20230907\bin\Debug\alapok20230907.exe.config
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\alapok20230907\alapok20230907\bin\Debug\alapok20230907.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\alapok20230907\alapok20230907\bin\Debug\alapok20230907.pdb
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\alapok20230907\alapok20230907\obj\Debug\alapok20230907.csproj.AssemblyReference.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\alapok20230907\alapok20230907\obj\Debug\alapok20230907.csproj.SuggestedBindingRedirects.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\alapok20230907\alapok20230907\obj\Debug\alapok20230907.csproj.CoreCompileInputs.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\alapok20230907\alapok20230907\obj\Debug\alapok20230907.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\alapok20230907\alapok20230907\obj\Debug\alapok20230907.pdb
