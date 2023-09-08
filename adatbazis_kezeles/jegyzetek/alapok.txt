@@ -1,0 +1,176 @@
+								ADATBÁZIS-KEZELÉS
+					-----------------------------------------------------------------
+
+
+
+
+Alapfogalmak:
+-------------
+
+	- Adatbázis: Tárolt adatok és közöttük lévő kapcsolatok rendszere
+
+	- Adatbázis-kezelő rendszer: Az adatok rögzítését, biztonságos tárolását, módosítását, visszakeresését végző informatikai alkalmazás
+
+	- Adatmodell: Az egyedek, tulajdonságok és a kapcsolatok megadásának módja.
+			
+		- Egyed (entitás): Az a dolog amiről adatokat tárolunk.
+
+		- Tulajdonság (atribútum): Az egyedet egy jellemző adata
+
+		- Előfordulás: Az egyed egy konkrét értéke
+
+
+
+	PÉLDA: (3 sor, 4 oszlop)
+	------
+
+
+			----------------------------------------------------------------------
+						    ISMERŐS
+
+			Név		Cím		Telefonszám		Névnap
+
+			Kovács Béla	Kecskemét	06206861052		Szeptember 12
+
+			Arany József	Budapest	06301252364		Április 4
+			----------------------------------------------------------------------
+
+
+	
+	Egyed		->	Táblázat (ISMERŐS)
+	
+	Tulajdonság	->	1 oszlop (Név)
+
+	Előfordulás 	->	1 sor	(Kovács Béla	Kecskemét	06206861052		Szeptember 12)
+
+	
+
+
+KAPCSOLATOK: 
+------------
+
+	- Kapcsolatnak nevezzük az egyedek közötti viszonyt, összefüggést.
+
+	- Fajtái:
+
+		- egy-egy kapcsolat (1:1)
+
+		- egy-több kapcsolat (1:N)
+
+		- több-több kapcsolat (N:M)
+
+
+Egy-egy kapcsolat:
+
+	- Az egy-egy kapcsolat során az egyik egyehalmaz minden egyes eleméhez, pontosan egy másik egyedhalmazbeli elem tartozik
+
+	- Pl.: Mindenkinek csak egy szemlyi száma van, és minden egyes személyi számhoz csak egy ember tartozik
+
+
+Egy-több kapcsolat:
+
+	- Azt mondjuk, hogy az A egyed és B egyed között egy-több kapcsolat áll fenn, ha az A egyedhalmaz mindegyik eleméhez a B egyedhalmaz több eleme is tartozhat
+
+	- Pl.: egy anyanévhez több gyereknév is tartozhat, de egy gyereknek csak egy anyaneve lehet
+
+
+Több-több kapcsolat:
+	
+	- Több-több kapcsolatról beszélünk amennyiben A egyedhalmaz minden eleméhez a B egyedhalmaz több eleme tartozik és fordítva.
+
+	- Pl.: A egyedhalmaz: péksütemények (csiga, bukta, fánk); B egyedhalmaz: ízek (kakaós, diós, lekváros)
+
+
+
+
+ADATMODELL FAJTÁI:
+------------------
+
+	- Hierarchikus és hálós modellek: az adatok közötti kapcsolatokat emeli ki
+
+	- Objektumorientált modell: az egyedet objektumként kezeli
+
+	- Relációs adatmodell: szerkezetét elsősorban az adatok tulajdonságai szabják meg
+
+
+
+RELÁCIÓS ADATMODELLEK:
+----------------------
+
+	- Az adatokat táblákban (táblázatokban) tároljuk.
+
+	- A reláció = egy táblázat, a táblázat soraiban tárolt adatokkal együtt.
+
+	- A relációs adatbázis pedig relációk és csak relációk összessége.
+
+	- Reláció foka: tulajdonságok száma
+	
+	- Reláció számossága: a relációban előforduló sorok száma.
+
+	- Két tábla között a kapcsolatot a közös mezők alkotják.
+
+
+
+		Adatmodell	Relációs adatmodell
+
+		egyed		tábla
+	
+		tulajdonság	mező (oszlop)
+
+		előfordulás	rekord (sor) 
+
+
+
+A TÁBLÁKRA VONATKOZÓ ELŐÍRÁSOK
+------------------------------
+
+	- Az adatbázis táblái egyedi (egymástól különböző) névvel rendelkeznek
+
+	- Egy táblán minden oszlopnak (mezőnek) egyedi neve van
+
+	- Egy oszlopban (mezőben) csak ugyan olyan típusú adatokat tárolunk. (ha 'int' az első akkor mindegyik legyen 'int')
+
+	- Nem lehet két teljesen egyforma sor (rekord)
+
+	- A sorok, illetve oszlopok sorrendje tetszőleges
+
+
+
+A TÁBLA KULCSAI:
+----------------
+
+	- Kulcs: Azoknak a tulajdonságoknak (mezőknek) a legszűkebb halmaza, amelyek minden sort (rekordot) egyértelműen meghatároznak.
+
+	- Pl.: Egy diákot egyértelműen azonosít a sorszáma a naplóban.
+
+	- Pl.: Ha nem laknak egy helyen azonos nevű személyek, akkor ismerőseink esetén a Név és a Lakcím mezők alkotnak kulcsot
+
+	- Sorszám, Név és Lakcím  ->  elsődleges tulajdonságok, a többi másodlagos.
+
+	- Egyszerű kulcs: egyetlen tulajdonságból (mezőből) áll.
+
+	- Összetett kulcs: több tulajdonság (mező) alkotja.  ->  számláló mező összetett kulcs helyett
+
+	- A relációs adatbázis rekordjait azonosító kulcsot gyakran elsődleges kulcsnak nevezik
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
