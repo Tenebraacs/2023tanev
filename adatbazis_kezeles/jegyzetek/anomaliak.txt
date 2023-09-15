@@ -1,0 +1,74 @@
+ANOMÁLIÁK (hiba, rendellenesség) AZ ADATBÁZISBAN
+	- Megnehezítik az adatbázisban lévő táblák használatát
+
+	Fajtái:
+	1. Redundancia: adatismétlődést jelent
+	- Káros redundancia:Adatok felesleges ismétlődése, tárolása
+	Eredménye:
+	Megnő az adatbázis mérete;
+	 megnő a hibázás lehetősége;
+	lelassul a munkamenet;
+	többletmunkával jár;
+	- Ellenőrzött redundancia: Szándékosan, a terező álltal elhelyezett adatismétlődés, ami általában számított mező, ami gyorsabbá teheti a munkavégzést
+	- Optimális redundancia.: Ez biztosítja az adatbázisban a relációk közötti kapcsolatot.
+
+	2. Módosítási anomália: Káros redundancia esetén fordul elő,
+	 óamikor minden rekordot végig kell vizsgálni ahhot, hogy hibamentes lehessen az adatbázist módosítani.
+
+	3. Törlési anomália: Akkor lép fel, amikor csak adatvesztés árán lehet kitörölni valamit az adatbázisból.
+
+	4. Bővítési anomália: Olyankor fordul elő, amikor valamilyen szerkezeti okból nem engedélyezett az adatfelvitel
+
+	A REDUNDANCIA
+
+	Redundanciáról akkor beszéünk, ha valamely értéket vagy a többi adatból levezethető mennyiséget többszörösen tároljuk az adatbázisban.
+
+	A redundancia a tárolóterület felesleges lefoglalása mellett, felesleges adatbázis-frissítése és adatkarbantartási műveletekhez vezet,
+	amelyek az adatbázis ellenmondásosságát (inkonzisztenciáját) okozhatját.
+
+	Az adatbázis akkor inkonzisztens, ha egymásnak ellentmondó eényeket tartalmaz.
+
+	Pl.: A táblázatban egyes adatokat többször is tárolunk.
+	DOLGOZÓK
+	Dolgozó		Osztálykód	Osztály neve	Osztályvezető	Beosztás
+	Kiss István	KÖ		Könyvelés	Molnár Katalin	könyvelő
+	Nagy József	PÜ		Raktár		Csiszár Zoltán	targonca
+	Kovács		KÖ		Könyvelés	Molnár Katalin	könyveléő
+
+	Az osztály neve és az Osztályvezető oszlopok ebben a táblázatban való
+	felvétele kettős hátránnyal jár:
+	- Ha új dolgozó kerül a táblába, nem elég csak az osztálykódot
+	feltüntetni, az osztálly nevét és az osztályvezető nevét is fel kell vennünk.
+	
+	A redundanciát meg kell különböztetni az értékek duplikált (többszörös) tárolásra szükségünk lehet a relációkban, míg a redundanciát el kell kerülni.
+
+	Pl.:
+	TERMÉKEK
+	Termék		Alkatrész	Darab
+	Nyomtató	papír adagoló	1
+	Nyomtató	memória		2
+	Számítógép	HDD		1
+	Számítógép	memória		4
+
+	-A tábla a termék oszlopban többször tartalmazza a nyomtató és számítógép adatokat.
+	-Ez azonban nem okoz redundanciát, mivel egy termék több alkatrészből is állhat, így nem ugyanannak a ténynek a többszörös tárolásáról van szószó,
+	hanem egy másik tényt fejezünk ki, melyhez elengedhetetlen a duplikált tárolás.
+	
+	Redundanciával állunk szemben akkor is, ha a táblázatban olyan oszlopot tüntetünk fel, amely már valamilyen tárolt adatból egyértelműen levezethető adatokat tartalmaz.
+
+	A redundanciák kiszűrésének első lépése a függőségek feltárása, második pedig a normál formák alkalmazása.
+
+	FUNKCIONÁLIS KAPCSOLATOK (FÜGGŐSÉGEK)
+
+	Funkcionális kapcsolatról akkor beszélünk, ha egy vagy több adat értékéből egy másik adat értéke következik.
+	Pl.: A hallgató Neptun-kódja egyértelműen mehatározza a hallgató nevét.
+	Neptun kód -> Hallgató neve
+	
+	- A függőség bal oldalát meghatározónak is nevezhetjük.
+	- A jobb oldalon csak egy darab érték állhat, tehát a meghatározó értékéből egy tulajdonságon belül csak egyetlen érték következhet.
+	- Ha több, akkor nincs szó funkcionális függőségről (kapcsolatról).
+	
+	Pl.:
+	Bár a névhez csak egy születési év tartozhat, de mivel röbb embernek is lehet azonos a neve, az adott névhez több születési év is hozzárendelhető.
+	Itt nincs szó funkcionális függőségről.	
+

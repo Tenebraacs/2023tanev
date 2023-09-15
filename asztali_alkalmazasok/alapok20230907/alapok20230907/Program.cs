@@ -148,6 +148,114 @@ namespace alapok20230907
             char k = 'a';
             char ures = ' ';
 
+
+            /*
+             SZÖVEG: string
+            művelete: összefűzés (konkatenáció, +)
+            - karakterei egyenként lekérdezhetők, de nem módosíthatók
+            - A karakterek sorszámozása 0-tól indul.
+             */
+
+            string sz = "almafa";
+            Console.WriteLine("Az sz változó első karaktere: {0}", sz[0]);
+
+            /*
+             írjuk ki a képernyőre az x*y, majd alá 4 tizedes pontossággal az x/y értékét, ha x=2, y = -11!
+             A szoveg változó string típusú legyen és " értéke:" szöveg!
+             */
+
+            double x = 2, y = 11;
+            string szoveg = " értéke:";
+
+            Console.WriteLine("Az x*y{0} {1}", szoveg, x*y);
+            Console.WriteLine("Az x*y{0} {1:0.0000}", szoveg, x/y);
+
+            /*
+             LOGIKAI: bool
+            Értéke: igaz (ture, 1), hamis (false, 0)
+            pl.:
+            bool b1 = false;
+            bool b2 = 11<3;
+
+            Műveletek: tagadás (!), and (&&), or (||), kizáro vagy (^)
+
+            A   B   A && B  A || B  A ^ B
+            i   i      i       i       h
+            i   h      h       i       i
+            h   i      h       i       i
+            h   h      h       h       h
+            
+            ÁLTALÁNOSSÁGBAN A MŰVELETEKRŐL
+            PL.:
+            a = a + 3 helyett a += 3
+            b = b - 5 helyett b -= 5
+            c = c * 2 helyett c *= 2
+            d = d / 4 helyett d /= 4
+            
+            i = i + 1 helyett i++ vagy ++i
+            j = j - 1 helyett j-- vagy --j
+
+            Prefexes forma: ++i vagy --j
+            - A művelet elvégzésekor a változó eredeti
+            értéke egy átmeneti tárolóba másolódik.
+             Ezt növeljük (vagy csökkentjük) eggyel, majd az így kapott eredmény a változónak adjuk.
+            - Tehát az eredmény és a változó értéke is az új érték lesz.
+
+            int i = 5;
+            int x = ++i;
+            Eredmény: 6
+
+            int i j = 4;
+            int x = ++i;
+            Eredmény: 3
+
+            Postfixes forma: i++ vagy j--
+            - A művelet elvégzésekor a változó megkapja az úk
+            (egggyel növelt/csökkentett) értéket,
+            de a művelet eredmény az átmeneti tárolóba tett eredmény lesz
+
+            //BEOLVASÁS BILLENTYŰZETRŐL
+            A beolvasás eredményét egy változóban kell eltárolni
+
+            string aszoveg = Console.ReadLine();
+             */
+
+            Console.Write("Kérek egy szöveget: ");
+            Console.ReadLine();
+
+            Console.Write("egész szám: :");
+            int egesz = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Kérek egy valós számot: ");
+            double valos = Convert.ToDouble
+                (Console.ReadLine());
+
+
+            /*
+             írjunk egy programot ami bekér 2 egész számot és kiíirja összegüket
+             */
+
+            int a5 = 0, b5 = 0;
+            Console.Write("a =");
+            a5 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b =");
+            b5 = Convert.ToInt32(Console.ReadLine());
+            int osszeg = a5 + b5;
+            Console.WriteLine("Összeg: {0}", osszeg);
+
+            //MATEMATIKAI FÜGGVÉNYEK
+            /*
+             - négyzetgyökvonás: Math.Sqrt(szám)
+             - hatványozás: Math.Pow(alap,kitevő)
+             - kerekítés: Math.Round(szam) --> egész számra
+                    Math.Round(szam, tizedesjegyek száma)
+             */
+            Console.WriteLine("Négyzetgyökvonás {0}", Math.Sqrt(16));
+            Console.WriteLine("Hatványozát: {0}", Math.Pow(2, 3));
+            Console.WriteLine("Kerekítés: {0}", Math.Round(4.31231231132332));
+            Console.WriteLine("Kerekítés: {0}", Math.Round(4.31231231132332,3));
+
+
             Console.ReadKey();
         }
     }
