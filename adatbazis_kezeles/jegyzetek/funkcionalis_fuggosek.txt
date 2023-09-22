@@ -1,0 +1,40 @@
+ A funkcionális függőség egyik speciális formája a teljes funcionális függőség.
+Akkor beszélünk teljes funkcionális föggűségről, ha a meghatározó oldalán nincs felesleges tulajdonság.
+Például:
+Település neve, Utcanév, Házszám -> Irányítószám
+- Funkcionális, de nem teljes funkcionális függőség, mert az irányítószámot az első két tulajdonság (Település neve, Utcanév) egyértelműen meghatározza.
+
+ELADÁS (3 oszlop, 7 sor)
+
+DÁTUM	TKÓD	DB
+02/03	TX-5	2
+02/03	XB-3	6
+02/04	ET-3	4
+02/04	FG-G	5
+02/04	TX-5	6
+02/05	XB-3	7
+
+{DÁTUM, TKÓD} -> {DB} függőség létezik
+- DB tulajdonság külön a dátumtól nem függ, mert egy nap több termékből is eladhatnak ugyan annyi darabot;
+- külön a terméktől sem függ, mert más és más napokon is eladhatnak ugyanolyan terméket.
+Tehát ebben az esetben teljes funkcionális föggűségről beszélünk.
+
+TRANZISZTÍV FÜGGŐSÉG
+- Két funkcionálisan függő tulajdonsághalmaz (attribútumhalmaz) között található egy harmadik, amely "átviszi" a függőséget.
+
+Adott a következő relációs séma:
+
+DOLGOZÓ(SZEMÉLYISZÁM, HAVIBÉR, ÉVESBÉR)
+
+Fentállnak a következő függőségek:
+{SZEMÉLYISZÁM} -> {HAVIBÉR}
+{SZEMÉLYISZÁM} -> {ÉVESBÉR}
+
+Ugyanakkor a következő függőség is teljesül:
+{HAVIBÉR} -> {ÉVESBÉR}
+
+Létezik a tranzisztív függőség:
+
+		{SZEMÉLYISZÁM}
+		/	      \
+	{HAVIBÉR}     ->      {ÉVESBÉR}

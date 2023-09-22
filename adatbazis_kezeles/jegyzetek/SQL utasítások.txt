@@ -1,0 +1,73 @@
+
+SQL utasítások MySQL környezetben
+
+Csoportosítása:
+1. DDL (Data Definition Language) - Adatdefiníciós nyelv: az adatbázis tábláinak felépítését határozhatjuk meg.
+2. DQL (Data Query Language) - Adatkezelő nyelv: 1 vagy több adathalmazből egy adathalmazt állít elő.
+3. DML (Data Manipulation Language) - Adatmanipulációs nyelv: Az adatlekérdezési utasítások az egyes rekordok tartalmára vonatkoznak.
+4. DCL (Data Control Language) - Adatelérést vezérlő nyelv: Jogosultságok adása és a vezérlők működésének szabályozása.
+
+
+DDL (Data Definition Language) - Adatdefiníciós nyelv
+
+- CREATE TABLE / DATABASE - tábla / adatbázis létrehozása
+- ALTER TABLE - tábla szerkezetének módosítása
+- DROP TABLE - tábla törlése
+
+Adatbázis létrehozása:
+
+CREATE DATABASE adatbázis_neve
+DEFAULT  CHARACTER SET utf8
+COLLATE utf8_hungarian_ci;
+
+Megjegyzés:
+- UTF-8 kódolás beállítása: DEFAULT CHARACTER SET utf8
+- karakterek összehasonlításának beállítása: COLLATE utf8_hungarian_ci;
+  utf8 - karakterenként
+  hungarian - magyar szabályok szerint
+  ci - kis és nagybetűk között nem tesz különbséget
+
+
+Adattábla létrehozása:
+
+CREATE TABLE tábla_neve
+(
+	mezőnév1 típus megszorítások
+	mezőnév2 típus(hossz),
+	.....
+	mezőnévN típus
+);
+
+
+Tábla struktúrájának módosítása:
+
+- új mező hozzáadása a táblához
+  ALTER TABLE tábla_neve ADD mező_neve adattípus;
+
+- mező törlése a táblából
+  ALTER TABLE tábla_neve DROP mező_neve;
+
+
+Tábla átnevezése:
+
+ALTER TABLE tábla_neve RENAME TO új_táblanév;
+
+
+Tábla törlése az adatbázisból:
+
+DROP TABLE tábla_neve;
+
+Egy mező atribútumai (jellemző tulajdonságai):
+- not null: az adott mező nem lehet üres
+- unique: az adott mező csak egyedi (egymástól eltérő) értéket tartalmazhat soronként
+- auto_increment: automatikusan növekvő mező (pl. sorszám). Hatására a mező értékét az adatbevitelkor az adatbázis automatikusan állítja elő.
+
+Adattípusok
+
+
+
+
+
+
+
+
