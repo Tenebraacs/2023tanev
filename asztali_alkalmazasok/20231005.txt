@@ -1,0 +1,89 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Feladat 1: Testtömegindex kiszámítása
+        Console.Write("Kérem adja meg a testsúlyát (kg): ");
+        double testsuly = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Kérem adja meg a testmagasságát (m): ");
+        double testmagassag = Convert.ToDouble(Console.ReadLine());
+        double testtomegindex = testsuly / (testmagassag * testmagassag);
+
+        string testtomegOsztaly = "";
+
+        if (testtomegindex < 18.5)
+            testtomegOsztaly = "alultáplált";
+        else if (testtomegindex < 24.9)
+            testtomegOsztaly = "normál testsúlyú";
+        else if (testtomegindex < 29.9)
+            testtomegOsztaly = "túlsúlyos";
+        else
+            testtomegOsztaly = "elhízott";
+
+        Console.WriteLine($"Testtömegindex: {testtomegindex:F2}, Ön {testtomegOsztaly}.\n");
+
+        // Feladat 2: Nezögazdasági jóslás
+        Console.Write("Kérem adja meg az elvetett búza mennyiségét tonnában: ");
+        double buzaMennyiseg = Convert.ToDouble(Console.ReadLine());
+        Random random = new Random();
+        double szorzo = random.Next(5, 16);
+        double varhatoHozam = buzaMennyiseg * szorzo;
+
+        string evVarhato = "";
+
+        if (szorzo >= 5 && szorzo <= 8)
+            evVarhato = "átlag alatti év";
+        else if (szorzo >= 9 && szorzo <= 12)
+            evVarhato = "átlagos év";
+        else
+            evVarhato = "átlag feletti év";
+
+        Console.WriteLine($"Várható hozam: {varhatoHozam:F2} tonna, Várható év: {evVarhato}.\n");
+
+        // Feladat 3: Számok beolvasása, amíg 0-t nem adunk meg
+        Console.WriteLine("Feladat 3: Számok beolvasása, amíg 0-t nem adunk meg.");
+        int szam;
+        do
+        {
+            Console.Write("Kérem adjon meg egy számot (0 a kilépéshez): ");
+            szam = Convert.ToInt32(Console.ReadLine());
+        } while (szam != 0);
+
+        // Feladat 4: Számok beolvasása, amíg az utolsó két szám meg nem egyezik
+        Console.WriteLine("\nFeladat 4: Számok beolvasása, amíg az utolsó két szám meg nem egyezik.");
+        int elozoSzam = -1;
+        int aktualisSzam;
+        do
+        {
+            Console.Write("Kérem adjon meg egy számot: ");
+            aktualisSzam = Convert.ToInt32(Console.ReadLine());
+            if (aktualisSzam == elozoSzam)
+                Console.WriteLine("Az utolsó két szám megegyezik!");
+            elozoSzam = aktualisSzam;
+        } while (true);
+
+        // Feladat 5: Számkitalálós játék
+        Console.WriteLine("\nFeladat 5: Számkitalálós játék.");
+        int gondoltSzam = random.Next(1, 101);
+        int probalkozasok = 0;
+
+        while (true)
+        {
+            Console.Write("Kérem tippeljen egy számot 1 és 100 között: ");
+            int tipp = Convert.ToInt32(Console.ReadLine());
+            probalkozasok++;
+
+            if (tipp < gondoltSzam)
+                Console.WriteLine("A gondolt szám nagyobb.");
+            else if (tipp > gondoltSzam)
+                Console.WriteLine("A gondolt szám kisebb.");
+            else
+            {
+                Console.WriteLine($"Gratulálok! Eltalálta a számot ({gondoltSzam}). Ön {probalkozasok} próbálkozásból találta el.");
+                break;
+            }
+        }
+    }
+}
