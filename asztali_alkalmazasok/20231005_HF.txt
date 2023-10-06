@@ -1,0 +1,102 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Feladat 1: Két szám beolvasása és műveletek végrehajtása
+        Console.Write("Kérem adja meg az első számot: ");
+        double szam1 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Kérem adja meg a második számot: ");
+        double szam2 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine($"a. Összeg: {szam1 + szam2}");
+        Console.WriteLine($"b. Különbség: {szam1 - szam2}");
+        Console.WriteLine($"c. Szorzat: {szam1 * szam2}");
+
+        if (szam2 != 0)
+            Console.WriteLine($"d. Hányados: {szam1 / szam2}");
+        else
+            Console.WriteLine("d. Hányados: Nem értelmezett (osztás 0-val).\n");
+
+        // Feladat 2: Két pozitív egész szám beolvasása és számtani és mértani közép kiszámolása
+        Console.Write("Kérem adja meg az első pozitív egész számot: ");
+        int szamA = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Kérem adja meg a második pozitív egész számot: ");
+        int szamB = Convert.ToInt32(Console.ReadLine());
+
+        double szamtaniKozep = (szamA + szamB) / 2.0;
+        double mertaniKozep = Math.Sqrt(szamA * szamB);
+
+        Console.WriteLine($"Számtani közép: {szamtaniKozep}");
+        Console.WriteLine($"Mértani közép: {mertaniKozep}\n");
+
+        // Feladat 3: Dolgozat osztályozása
+        Console.Write("Kérem adja meg a dolgozat pontszámát: ");
+        int pontszam = Convert.ToInt32(Console.ReadLine());
+
+        if (pontszam >= 0 && pontszam <= 100)
+        {
+            if (pontszam >= 90)
+                Console.WriteLine("Jeles (5)");
+            else if (pontszam >= 80)
+                Console.WriteLine("Jó (4)");
+            else if (pontszam >= 65)
+                Console.WriteLine("Közepes (3)");
+            else if (pontszam >= 50)
+                Console.WriteLine("Elégséges (2)");
+            else
+                Console.WriteLine("Elégtelen (1)");
+        }
+        else
+            Console.WriteLine("Hibás adat (pontszám nem megfelelő tartományban).\n");
+
+        // Feladat 4: Diák igazolatlan hiányzásainak száma alapján büntetés kiszámolása
+        Random random = new Random();
+        int igazolatlanHianyzasok = random.Next(0, 11);
+
+        Console.WriteLine($"Az igazolatlan hiányzások száma: {igazolatlanHianyzasok}");
+
+        if (igazolatlanHianyzasok == 0)
+            Console.WriteLine("Magatartás jegye: Jeles");
+        else if (igazolatlanHianyzasok <= 2)
+            Console.WriteLine("Magatartás jegye: Jó");
+        else if (igazolatlanHianyzasok <= 5)
+            Console.WriteLine("Magatartás jegye: Közepes");
+        else if (igazolatlanHianyzasok <= 10)
+            Console.WriteLine("Magatartás jegye: Elégséges");
+        else
+            Console.WriteLine("Magatartás jegye: Felfüggesztés");
+
+        Console.WriteLine($"Büntetés mértéke: {igazolatlanHianyzasok} nap szünet.\n");
+
+        // Feladat 5: Informatika osztályzat és szülői vélemény
+        Console.Write("Kérem adja meg az informatika osztályzatot: ");
+        int osztalyzat = Convert.ToInt32(Console.ReadLine());
+
+        if (osztalyzat == 5)
+        {
+            Console.WriteLine("Szülői vélemény: Kiváló teljesítmény!");
+        }
+        else if (osztalyzat == 4)
+        {
+            Console.WriteLine("Szülői vélemény: Jó teljesítmény!");
+        }
+        else if (osztalyzat == 3)
+        {
+            Console.WriteLine("Szülői vélemény: Közepes teljesítmény.");
+        }
+        else if (osztalyzat == 2)
+        {
+            Console.WriteLine("Szülői vélemény: Elégséges teljesítmény.");
+        }
+        else if (osztalyzat == 1)
+        {
+            Console.WriteLine("Szülői vélemény: Gyenge teljesítmény.");
+        }
+        else
+        {
+            Console.WriteLine("Szülői vélemény: Érvénytelen osztályzat.");
+        }
+    }
+}
