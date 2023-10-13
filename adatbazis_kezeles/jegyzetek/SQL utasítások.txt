@@ -64,6 +64,92 @@ Egy mező atribútumai (jellemző tulajdonságai):
 
 Adattípusok
 
+- char - fix hosszúságú karaktersorozat
+- varchar - változó hosszúságú karaktersorozat
+- text - vátozó h.
+- bit -logikai adattípus helyett
+- tinyint - logikai adattípus helyett
+- int - egész szám
+- double, decimal, float, real - valós szánok
+- date
+- time
+
+2. DQL - Adatlekérdező nyelv
+SELECT [DISTINCT] oszloplista
+FROM táblanévlista
+[WHERE feltétel]
+[GROUP BY oszloplista]
+[HAVING feltétel]
+[ORDER BY oszloplista ASC/DESC]
+[LIMIT szám];
+
+Alias használata:
+Ha az eredménytáblán nem az eredeti oszlopnevet szeretnénk megjeleníteni, akkor használhatunk helyettük álneveket, vagyis alliasokat.
+
+SELECT oszlop_neve1 AS oszlop_alias1, oszlop_neve2 AS oszlop_alias2
+FROM táblaneve;
+
+Számított mezők használata:
+- Egy oszlop értékeiből egyetlen értéket hoznak létre.
+- Általános alakjuk: függvénynév([DISTINCT]oszlopnév)
+- DISTINCT -> az oszlopban szereplő azonos értékeket csak egyszer kell figyelembe venni
+- A számításnál a NULL értékek figyelmen kívül maradnak.
+- AVG(), SUM(), COUNT(), MAX(), MIN()
+
+3. DML - Adatmanipulációs nyelv
+- Hozzáfűző lekérdezés
+  INSERT INTO tábla_neve VALUES (érték1, érték2, ...);
+  INSERT INTO tábla_neve (mező1, mező2, ...) VALUES (érték1, érték2, ...);
+
+- Frissitő/módosító lekérdezés
+  UPDATE tábla_neve SET mező_neve = új_érték WHERE mező_neve = érték;
+
+- Törlő lekérdezés
+  DELETE FROM tábla_neve;
+  DELETE FROM tábla_neve WHERE mezőnév = érték;
+
+MŰVELETI JELEK A WHERE FELTÉTELBEN:
+- matematikai műveletek: +, -, *, /
+- relációs műveletek: =, <>, <, >, <=, >=
+- BETWEEN.. AND .. -> két érték között van
+  mezőnév BETWEEN alsóhatár AND felsőhatár
+- IN (érték1, érték2, ...): benna van
+  pl.: Szeretnénk megtudni, hogy mely tanulók születtek Karcagon, illetve Kisváradán
+  szuletesi_hely IN ("Karcag", "Kisvárada")
+- IS NULL, IS NOT NULL
+  pl.: mezőnév IS NOT NULL
+- LIKE
+  helyettesítő karakterek: % - több karakter, _ - 1 karaktert helyettesít
+  pl.: M betűvel kezdődő neveket listázzuk ki
+       nev LIKE "M%"
+       M-el kezdődő hárombetűs neveket listázzuk ki, ahol a 3. betű a K
+       nev LIKE "M_K"
+- logikai műveletek: AND, OR, NOT
+  Pl.: Azokat a tanulókat listázzuk ki:
+	- 1990-es években születtek és
+	- a nevük első karaktere A, utolsó karaktere B
+szuletesi_ev (BETWEEN 1990 AND 1999) AND nev LIKE "A%B"
+  pl.: ŰAzokat a tanulókat listázzuk ki, akik nem 1988 és 1990 között születtek
+szuletesi_ev NOT BETWEEN 1988 AND 1990
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
