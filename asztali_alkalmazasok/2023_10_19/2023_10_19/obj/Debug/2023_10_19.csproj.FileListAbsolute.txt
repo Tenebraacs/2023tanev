@@ -1,0 +1,8 @@
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\2023_10_19\2023_10_19\bin\Debug\2023_10_19.exe.config
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\2023_10_19\2023_10_19\bin\Debug\2023_10_19.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\2023_10_19\2023_10_19\bin\Debug\2023_10_19.pdb
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\2023_10_19\2023_10_19\obj\Debug\2023_10_19.csproj.AssemblyReference.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\2023_10_19\2023_10_19\obj\Debug\2023_10_19.csproj.SuggestedBindingRedirects.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\2023_10_19\2023_10_19\obj\Debug\2023_10_19.csproj.CoreCompileInputs.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\2023_10_19\2023_10_19\obj\Debug\2023_10_19.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\2023_10_19\2023_10_19\obj\Debug\2023_10_19.pdb
