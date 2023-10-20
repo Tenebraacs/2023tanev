@@ -33,12 +33,19 @@ ORDER BY terulet ASC
 LIMIT 3;
 
 5. feladat:
-SELECT COUNT(foldresz) AS "Afrikai államok száma:", COUNT(terulet), COUNT(nepesseg)
+SELECT 
+COUNT(foldresz) AS "Afrikai államok száma:", 
+SUM(terulet) AS "Összes területük (km2):", 
+SUM(nepesseg) AS "Összes népességük(ezer):"
+FROM orszagok
+WHERE foldresz = "Afrika";
 
 6. feladat:
-
+SELECT allam, terulet
+FROM orszagok
+GROUP BY foldresz, allamforma
+ORDER BY allam ASC;
 
 7. feladat:
-
-
-
+ALTER TABLE orszagok ADD nepsuruseg decimal(10,2)
+UPDATE orszagok SET nepsuruseg = nepesseg * 1000 / terulet;
