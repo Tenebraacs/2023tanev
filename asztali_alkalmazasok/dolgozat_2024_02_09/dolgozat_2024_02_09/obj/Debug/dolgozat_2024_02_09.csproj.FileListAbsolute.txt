@@ -1,0 +1,7 @@
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\dolgozat_2024_02_09\dolgozat_2024_02_09\bin\Debug\dolgozat_2024_02_09.exe.config
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\dolgozat_2024_02_09\dolgozat_2024_02_09\bin\Debug\dolgozat_2024_02_09.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\dolgozat_2024_02_09\dolgozat_2024_02_09\bin\Debug\dolgozat_2024_02_09.pdb
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\dolgozat_2024_02_09\dolgozat_2024_02_09\obj\Debug\dolgozat_2024_02_09.csproj.AssemblyReference.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\dolgozat_2024_02_09\dolgozat_2024_02_09\obj\Debug\dolgozat_2024_02_09.csproj.CoreCompileInputs.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\dolgozat_2024_02_09\dolgozat_2024_02_09\obj\Debug\dolgozat_2024_02_09.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\dolgozat_2024_02_09\dolgozat_2024_02_09\obj\Debug\dolgozat_2024_02_09.pdb
