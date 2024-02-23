@@ -1,0 +1,7 @@
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\fajlkezeles\fajlkezeles\bin\Debug\fajlkezeles.exe.config
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\fajlkezeles\fajlkezeles\bin\Debug\fajlkezeles.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\fajlkezeles\fajlkezeles\bin\Debug\fajlkezeles.pdb
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\fajlkezeles\fajlkezeles\obj\Debug\fajlkezeles.csproj.AssemblyReference.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\fajlkezeles\fajlkezeles\obj\Debug\fajlkezeles.csproj.CoreCompileInputs.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\fajlkezeles\fajlkezeles\obj\Debug\fajlkezeles.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\fajlkezeles\fajlkezeles\obj\Debug\fajlkezeles.pdb

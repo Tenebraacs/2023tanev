@@ -1,0 +1,7 @@
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\Lotto\Lotto\bin\Debug\Lotto.exe.config
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\Lotto\Lotto\bin\Debug\Lotto.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\Lotto\Lotto\bin\Debug\Lotto.pdb
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\Lotto\Lotto\obj\Debug\Lotto.csproj.AssemblyReference.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\Lotto\Lotto\obj\Debug\Lotto.csproj.CoreCompileInputs.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\Lotto\Lotto\obj\Debug\Lotto.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\Lotto\Lotto\obj\Debug\Lotto.pdb
