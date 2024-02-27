@@ -79,3 +79,56 @@ for (i = 1; i < 100; i++)
         document.write(i, "<br>")
     }
 }
+
+//Adjuk össze 1-től 100-ig a számokat!
+var szamok = 0;
+
+for (i = 1; i <= 100; i++) 
+{
+    szamok += i;
+}
+
+document.write("1-től 100-ig összeadva a számok: ", szamok, "<br>")
+
+// 11. feladat
+
+var oszthato = 0;
+
+for (i = 1; i <= 10000; i++)
+{
+    if (i % 7 == 0)
+    {
+        oszthato++;
+    }
+}
+
+document.write("1 és 10000 között ", oszthato, ", 7-el osztható szám van" );
+
+//Kérjünk be egy pozití egész számot
+
+// 1.megoldás
+
+var a = 0;
+var ok = false;
+do
+{
+    a = prompt('Kérek egy számot: ');
+    if (isFinite(a))
+    {
+        if (a > 0)
+        {
+            ok = true;
+        }
+    }
+}while(!ok);
+
+// 2. megoldás
+
+do
+{
+    a = prompt('Kérek egy számot: ');
+}while(!(isFinite(a) && a > 0 && Math.floor(a) == a));
+
+//Véletlenszám előállító függvény
+
+document.write(Math.floor(Math.random() * 10))
