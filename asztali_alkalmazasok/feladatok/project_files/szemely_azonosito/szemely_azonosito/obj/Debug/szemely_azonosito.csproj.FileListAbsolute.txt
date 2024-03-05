@@ -1,0 +1,7 @@
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\szemely_azonosito\szemely_azonosito\obj\Debug\szemely_azonosito.csproj.AssemblyReference.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\szemely_azonosito\szemely_azonosito\obj\Debug\szemely_azonosito.csproj.CoreCompileInputs.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\szemely_azonosito\szemely_azonosito\bin\Debug\szemely_azonosito.exe.config
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\szemely_azonosito\szemely_azonosito\bin\Debug\szemely_azonosito.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\szemely_azonosito\szemely_azonosito\bin\Debug\szemely_azonosito.pdb
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\szemely_azonosito\szemely_azonosito\obj\Debug\szemely_azonosito.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\szemely_azonosito\szemely_azonosito\obj\Debug\szemely_azonosito.pdb
