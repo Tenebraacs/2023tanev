@@ -1,0 +1,7 @@
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\fej_vagy_iras\fej_vagy_iras\bin\Debug\fej_vagy_iras.exe.config
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\fej_vagy_iras\fej_vagy_iras\bin\Debug\fej_vagy_iras.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\fej_vagy_iras\fej_vagy_iras\bin\Debug\fej_vagy_iras.pdb
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\fej_vagy_iras\fej_vagy_iras\obj\Debug\fej_vagy_iras.csproj.AssemblyReference.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\fej_vagy_iras\fej_vagy_iras\obj\Debug\fej_vagy_iras.csproj.CoreCompileInputs.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\fej_vagy_iras\fej_vagy_iras\obj\Debug\fej_vagy_iras.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\feladatok\project_files\fej_vagy_iras\fej_vagy_iras\obj\Debug\fej_vagy_iras.pdb
