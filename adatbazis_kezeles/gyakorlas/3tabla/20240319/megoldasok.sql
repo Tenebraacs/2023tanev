@@ -7,21 +7,21 @@ COLLATE utf8_hungarian_ci;
 
 
 2. feladat:
-CREATE TABLE megye
+CREATE TABLE gyumolcslevek
 (
     id int NOT NULL,
     mnev VARCHAR(128),
     CONSTRAINT pk_megye PRIMARY KEY (id)
 );
 
-CREATE TABLE varostipus
+CREATE TABLE partnereK
 (
     id int NOT NULL,
     vtip VARCHAR(128),
     CONSTRAINT pk_varostipus PRIMARY KEY (id)
 );
 
-CREATE TABLE varos
+CREATE TABLE kiszallitasok
 (
     id int NOT NULL,
     vnev VARCHAR(128),
