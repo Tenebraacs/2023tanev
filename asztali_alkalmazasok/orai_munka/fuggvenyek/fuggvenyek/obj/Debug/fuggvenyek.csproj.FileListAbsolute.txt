@@ -1,0 +1,7 @@
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\fuggvenyek\fuggvenyek\bin\Debug\fuggvenyek.exe.config
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\fuggvenyek\fuggvenyek\bin\Debug\fuggvenyek.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\fuggvenyek\fuggvenyek\bin\Debug\fuggvenyek.pdb
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\fuggvenyek\fuggvenyek\obj\Debug\fuggvenyek.csproj.AssemblyReference.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\fuggvenyek\fuggvenyek\obj\Debug\fuggvenyek.csproj.CoreCompileInputs.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\fuggvenyek\fuggvenyek\obj\Debug\fuggvenyek.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\fuggvenyek\fuggvenyek\obj\Debug\fuggvenyek.pdb

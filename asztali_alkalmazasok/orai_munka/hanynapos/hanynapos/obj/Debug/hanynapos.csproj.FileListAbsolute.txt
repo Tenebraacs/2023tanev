@@ -1,0 +1,7 @@
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\hanynapos\hanynapos\bin\Debug\hanynapos.exe.config
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\hanynapos\hanynapos\bin\Debug\hanynapos.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\hanynapos\hanynapos\bin\Debug\hanynapos.pdb
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\hanynapos\hanynapos\obj\Debug\hanynapos.csproj.AssemblyReference.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\hanynapos\hanynapos\obj\Debug\hanynapos.csproj.CoreCompileInputs.cache
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\hanynapos\hanynapos\obj\Debug\hanynapos.exe
+D:\karacsony_zoltan_11d\asztali_alkalmazasok\orai_munka\hanynapos\hanynapos\obj\Debug\hanynapos.pdb
