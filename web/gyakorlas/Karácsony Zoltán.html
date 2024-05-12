@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x = Math.floor(Math.random() * 100) + 1;
+        document.write('Gondoltam egy számra 1 és 100 között! <br />');
+
+        do {
+            var tipp = prompt('Add meg a tipped!');
+            if (tipp > x) {
+                document.write('Kisebbet! <br />');
+            } else if (tipp < x) {
+                document.write('Nagyobbat! <br />');
+            }
+        } while (tipp != x);
+
+        document.write('Gratulálok, a gondolt szám: ', x, ' volt.');
+
+        //var str = 'Alma';
+        var str = new String(prompt('Add meg a neved!'));
+        for(var i=0;i<str.length;i++){
+            document.write(str.charAt(i),'<br>');
+        }
+
+        var str1 = new String('alma');
+        var str2 = new String('xywz');
+        if(str1.valueOf()>str2.valueOf()){
+            document.write('Az első értéke a nagyobb!');
+        }
+        else if(str1.valueOf()<str2.valueOf()){
+            document.write('A második értéke a nagyobb!');
+        }
+        else{
+            document.write('A kettő egyenlő');
+        }
+
+        for(var i=32;i<255;++i){
+            document.write(String.fromCharCode(i));
+        }
+
+        var str = new String('Árvíztűrő tükörfúrógép');
+        document.write(str,'<br />');
+
+        //Nagybetűs alak
+        document.write(str.toUpperCase(),'<br />');
+
+        //Kisbetűs alak
+        document.write(str.toLowerCase(),'<br />');
+
+        //Kivágás
+        document.write(str.substr(10,5),'<br />');
+
+        //Keresés
+        document.write(str.indexOf('dbfshgb'),'<br />');
+
+        //Keresés - utolsó előfordulás
+        document.write(str.lastIndexOf('!'),'<br />');
+
+        var nev = new String(prompt('Add meg a teljes neved!'));
+        var x = nev.indexOf(' ')+1;
+        document.write('Szia ',nev.substr(x));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
